@@ -1,9 +1,6 @@
-use std::borrow::Cow;
 use crate::core::sync::Phone;
 use crate::core::theme::Theme;
 use crate::core::uad_lists::{PackageState, Removal, UadList};
-use std::io::Read;
-use regex::Regex;
 
 use crate::gui::style;
 use crate::gui::views::settings::Settings;
@@ -334,3 +331,4 @@ let icon: Image<Handle> = Image::new(Handle::from_path(icon_path))
         .into()
     }
 }
+

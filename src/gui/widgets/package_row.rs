@@ -1,17 +1,13 @@
 use crate::core::sync::Phone;
 use crate::core::theme::Theme;
 use crate::core::uad_lists::{PackageState, Removal, UadList};
-
 use crate::gui::style;
 use crate::gui::views::settings::Settings;
 use crate::gui::widgets::text;
 use iced::widget::image::Handle;
 use iced::widget::{Space, button, checkbox, row, Image};
 use iced::{Alignment, Command, Element, Length, Renderer, alignment};
-
-//use crate::core::adb::extract_package;
 use std::path::PathBuf;
-//use crate::core::adb::handle_package_icon;
 
 #[derive(Clone, Debug)]
 pub struct PackageRow {
@@ -331,4 +327,5 @@ let icon: Image<Handle> = Image::new(Handle::from_path(icon_path))
         .into()
     }
 }
+
 
